@@ -1,0 +1,6 @@
+1;Maciej;Slawny;94021102658
+2;Karolina;Nowak;01012020666
+3;Ola;Lewandowska;89010101565
+4;Micha³;Marciniak;99020201653
+5;Piotr;D¹browski;70010203458
+6;Ma³gorzata;Waszkiewicz;65080102222
