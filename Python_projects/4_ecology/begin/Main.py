@@ -25,7 +25,7 @@ if __name__ == '__main__':
 	newOrg = Antylopa(position=Position(xPosition=5, yPosition=5), world=pyWorld)
 	pyWorld.addOrganism(newOrg)
 
-	print(pyWorld)
+	print(pyWorld) 
 
 	for _ in range(0, 50):
 		input('')
