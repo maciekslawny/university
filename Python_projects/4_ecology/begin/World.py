@@ -79,6 +79,8 @@ class World(object):
 		self.newOrganisms = []
 
 		self.turn += 1
+		
+		
 
 	def makeMove(self, action):
 		print(action)
@@ -146,6 +148,15 @@ class World(object):
 				result.append(filed)
 		return result
 
+
+	def plague(self, wybor):
+		"""Funkcja wywołuje włączenie trybu plagi, który skraca życie organizmów o połowę."""
+		if (wybor=='p' or wybor=='P'):        
+			self.organisms = [o for o in self.organisms if self.positionOnBoard(o.position)]
+			for o in self.organisms:
+				o.liveLength = o.liveLength//2
+			print("Życie wszystkich organizmów zostało skrócone o połowę.")
+
 	def __str__(self):
 		result = '\nturn: ' + str(self.__turn) + '\n'
 		for wY in range(0, self.worldY):
@@ -157,3 +168,8 @@ class World(object):
 					result += self.separator
 			result += '\n'
 		return result
+
+
+
+
+
